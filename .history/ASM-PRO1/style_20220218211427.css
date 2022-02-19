@@ -73,10 +73,10 @@ header{
     left: 10px;
 }
 .ten .phukien{
-    position: absolute !important ;
+    position: absolute;
     max-width: 100%;
     top: 10px;
-    right:20px;
+    right:10px;
 }
 .ten .phukien .control{
     /* display: none; */
@@ -142,45 +142,113 @@ header{
 .menu .nav>li>a:hover{
     color: #999;
 }
-.batdau{
-    padding-top: 150px;
+.mau i{
+    width: 50%;
+}
+.Product{
+    overflow:auto;
+    display: flex;
+    font-family: 'Be Vietnam Pro', sans-serif; 
+
+}
+.product{
+    padding-top: 134px;
+    padding-left: 50px;
+}
+.product1{
+    margin-bottom: 10px;
+    max-width: 200px;
+    cursor: pointer;
+    border: 1px solid rgb(199, 197, 197);
+}
+.product-main{
+    padding-top: 134px;
     text-align: center;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow:auto;
 }
-.form{
-   padding-top: 0px;
-   font-family: 'Be Vietnam Pro', sans-serif; 
-   text-align: center;
+.product-main1{
+    max-width: 700px;
+    margin-bottom: 10px;
 }
-.gioitinh {
-    padding-right: 220px;
+.product1:hover{
+    border: 1px solid black;
 }
-.control2{
-    width: 25%;
-    top: -15px;
-    right:0;
-    margin: 8px;
+
+.buttom{
+    padding: 10px 100px;
+    color: #999;
+    text-decoration: none;
+}
+.khac{
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif; 
+    color:rgb(88, 89, 90);
+    border-bottom:1px dashed gray ;
+}
+.sanpham .Sanpham{
+    width: 22%;
+    display: inline-block;
+    margin: 17px;
+    z-index: 3;
+}
+
+.sanpham .Sanpham .pro1 {
+    margin: 17px auto;
+    height: 0px;
+    position: relative;
+    text-align: center;
+}
+.sanpham .Sanpham .pro1 img{
+    max-width: 100%;
+}
+.sanpham .Sanpham .pro1 a{
+    text-decoration: none;
+    color: black;
+}
+.sanpham .Sanpham .pro1 .img-change{
+    position: absolute;
+    top:0px;
+    right:0px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.sanpham .Sanpham .pro1:hover .img-change{
+    opacity: 0;
+}
+.thongtin{
+    padding-right: 50px;
+    padding-top: 134px;
+    width: 50%;
+    position: relative;
+}
+.thongtin h4{
+    border-bottom: 1px dashed gray;
+    font-size: 25px;
+    color:rgb(128, 128, 128);
+}
+.thongtin .gia{
+    font-size: 20px;
+    border-bottom: 1px dashed gray;
+}
+.thongtin .control{
+    width: 100%;
+    border-radius: 0px 0px 0px 4px gray;
+    position:relative;
     box-sizing: border-box;
-    border: 1px solid #b9b9b9;
-    background-color: rgb(223, 222, 222);
+    border: 1px solid rgb(182, 181, 181);
     border-radius: 4px;
     outline:none;
-    padding: 10px 12px;
+    height: 40px;
 }
-.control2:focus{
-    background-color: white;
+.thongtinsanpham a{
+    text-decoration: none;
+    color:#999;
+    padding: 16px 150px;
+    background-color: rgb(58, 59, 59);
 }
-.control1{
-    width: 20%;
+.thongtinsanpham a:hover{
     background-color: black;
-    color: #f8f8f8;
-    padding: 10px 12px;
-    box-shadow: 0 0 0 0;
-}
-.control1:hover{
-    background-color: whitesmoke;
-    color: black;
-    box-shadow: 0 0 0 0;
+    color: white;
 }
 .hotline{
     height: 70px;
@@ -200,7 +268,7 @@ footer{
     height: 275px;
     padding: 10px;
     background: white;
-    font-family: 'Be Vietnam Pro', sans-serif; ;
+    font-family: 'Be Vietnam Pro', sans-serif; 
 }
 footer .ended{
     display: flex;

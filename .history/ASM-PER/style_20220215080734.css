@@ -155,7 +155,7 @@ header{
 .gioitinh {
     padding-right: 220px;
 }
-.control2{
+.control{
     width: 25%;
     top: -15px;
     right:0;
@@ -167,7 +167,7 @@ header{
     outline:none;
     padding: 10px 12px;
 }
-.control2:focus{
+.control:focus{
     background-color: white;
 }
 .control1{
