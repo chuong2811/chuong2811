@@ -176,7 +176,7 @@ footer{
     height: 275px;
     padding: 10px;
     background: white;
-    font-family: 'Be Vietnam Pro', sans-serif; ;
+    font-family: 'Be Vietnam Pro', sans-serif; 
 }
 footer .ended{
     display: flex;
@@ -184,16 +184,16 @@ footer .ended{
 footer .ended .footer-icon{
     margin-right: 30px;
 }
-.aboutus{
+footer .ended .footer-icon.aboutus{
     width:40%;
 }
-.aboutus h3{
+footer .ended .footer-icon.aboutus h3{
     position: relative;
     color:black;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.aboutus p{
+footer .ended .footer-icon.aboutus p{
     color: #999;
 }
 .lienket h3{
@@ -247,4 +247,7 @@ footer .ended .footer-icon{
     line-height: 70px;
     color: black;
     text-align: center;
+}
+.ket{
+    color:black;
 }

@@ -140,24 +140,107 @@ header{
 .menu .nav li:hover>.sub-menu{
     display: block;
 }
-
-.thongtin{
-    padding: 134px;
+.mau i{
+    width: 50%;
+}
+.Product{
+    overflow:auto;
+    display: flex;
     font-family: 'Be Vietnam Pro', sans-serif; 
+
 }
-.thongtin h1{
-    color: gray;
+.product{
+    padding-top: 134px;
+    padding-left: 50px;
+}
+.product1{
+    margin-bottom: 10px;
+    max-width: 200px;
+    cursor: pointer;
+    border: 1px solid rgb(199, 197, 197);
+}
+.product1:hover{
+    border: 1px solid black;
+}
+.product-main{
+    padding-top: 134px;
     text-align: center;
-}
-.thongtin .dacbiet{
-    text-align: center;
-    padding: 30px;
-}
-.thongtin .hanmuc{
-    font-size: 20px;
-    color: gray;
+    overflow:auto;
+    max-width: 700px;
+    margin-bottom: 10px;
 }
 
+.khac{
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif; 
+    color:rgb(88, 89, 90);
+    border-bottom:1px dashed gray ;
+}
+.sanpham .Sanpham{
+    width: 22%;
+    display: inline-block;
+    margin: 17px;
+    z-index: 3;
+}
+
+.sanpham .Sanpham .pro1 {
+    margin: 17px auto;
+    height: 0px;
+    position: relative;
+    text-align: center;
+}
+.sanpham .Sanpham .pro1 img{
+    max-width: 100%;
+}
+.sanpham .Sanpham .pro1 a{
+    text-decoration: none;
+    color: black;
+}
+.sanpham .Sanpham .pro1 .img-change{
+    position: absolute;
+    top:0px;
+    right:0px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.sanpham .Sanpham .pro1:hover .img-change{
+    opacity: 0;
+}
+.thongtin{
+    padding-right: 50px;
+    padding-top: 134px;
+    width: 50%;
+    position: relative;
+}
+.thongtin h4{
+    border-bottom: 1px dashed gray;
+    font-size: 25px;
+    color:rgb(128, 128, 128);
+}
+.thongtin .gia{
+    font-size: 20px;
+    border-bottom: 1px dashed gray;
+}
+.thongtin .control{
+    width: 100%;
+    border-radius: 0px 0px 0px 4px gray;
+    position:relative;
+    box-sizing: border-box;
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 4px;
+    outline:none;
+    height: 40px;
+}
+.thongtinsanpham a{
+    text-decoration: none;
+    color:#999;
+    padding: 16px 150px;
+    background-color: rgb(58, 59, 59);
+}
+.thongtinsanpham a:hover{
+    background-color: black;
+    color: white;
+}
 .hotline{
     height: 70px;
     background: whitesmoke;
@@ -176,7 +259,7 @@ footer{
     height: 275px;
     padding: 10px;
     background: white;
-    font-family: 'Be Vietnam Pro', sans-serif; ;
+    font-family: 'Be Vietnam Pro', sans-serif; 
 }
 footer .ended{
     display: flex;
@@ -184,16 +267,16 @@ footer .ended{
 footer .ended .footer-icon{
     margin-right: 30px;
 }
-.aboutus{
+footer .ended .footer-icon.aboutus{
     width:40%;
 }
-.aboutus h3{
+footer .ended .footer-icon.aboutus h3{
     position: relative;
     color:black;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.aboutus p{
+footer .ended .footer-icon.aboutus p{
     color: #999;
 }
 .lienket h3{
@@ -247,4 +330,7 @@ footer .ended .footer-icon{
     line-height: 70px;
     color: black;
     text-align: center;
+}
+.ket{
+    color:black;
 }

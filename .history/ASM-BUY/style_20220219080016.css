@@ -44,7 +44,6 @@ picture {
 }
 html{
     font-family: 'Gentium Basic', serif;
-    scroll-behavior: smooth;
 }
 header{
     position: fixed;
@@ -53,14 +52,14 @@ header{
     left: 0px;
     z-index: 5;
 }
-.logo{
+.ten{
     font-variant: small-caps;
     text-align: center;
     padding: 5px;
     margin: 0px;
     background: white;
 }
-.logo h1{
+.ten h1{
     padding:0px;
     width: 210px;
     height: 50px;
@@ -68,18 +67,18 @@ header{
     margin: 0px auto;
     border: 1px solid white;
 }
-.logo img{
+.ten img{
     position: absolute;
     top: 0px;
     left: 10px;
 }
-.logo .phukien{
+.ten .phukien{
     position: absolute !important ;
     max-width: 100%;
     top: 10px;
     right:20px;
 }
-.logo .phukien .control{
+.ten .phukien .control{
     /* display: none; */
     position:relative;
     top: -15px;
@@ -97,25 +96,31 @@ header{
     background: black;
     padding: 0.5px; 
 }
-.menu .nav li{
-    position: relative;
-    list-style:none;
-}
 .menu .nav>li{
     display: inline-block;
     margin-right: 30px;
 }  
-.menu .nav li a{
+.menu .nav>li>a{
     color: white;
     text-decoration: none;
+}
+.sub-menu{
+    text-align: left;
+    color: black;
+}
+.menu .nav .sub-menu>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu .nav li{
+    position: relative;
+    list-style:none;
 }
 .menu .nav li a{
     padding: 10px;
     line-height: 20px;
     display: inline-block;
-}
-.menu .nav>li>a:hover{
-    color: #999;
 }
 .menu .nav .sub-menu{
     display: none;
@@ -127,12 +132,6 @@ header{
     padding: 0px; 
     top: 40px;
     left: 0;
-    text-align: left;
-    color: black;
-}
-.menu .nav .sub-menu>li>a{
-    text-decoration: none;
-    color: black;
 }
 .menu .nav .sub-menu>li:hover{
     background-color:  gray;
@@ -140,24 +139,110 @@ header{
 .menu .nav li:hover>.sub-menu{
     display: block;
 }
-
-.thongtin{
-    padding: 134px;
+.menu .nav>li>a:hover{
+    color: #999;
+}
+.giohang{
+    padding-top: 134px;
+    text-align: center;
     font-family: 'Be Vietnam Pro', sans-serif; 
+    border-bottom: 1px dashed gray;
 }
-.thongtin h1{
-    color: gray;
-    text-align: center;
+.giohang1{
+    font-size: 40px;
 }
-.thongtin .dacbiet{
-    text-align: center;
-    padding: 30px;
-}
-.thongtin .hanmuc{
-    font-size: 20px;
-    color: gray;
-}
+.buy{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    font-family: 'Be Vietnam Pro', sans-serif; ;
 
+}
+.buybox1{
+    display: flex;
+    max-width: 100%;
+    border-bottom: 0.5px dashed gray;
+}
+.tensp{
+    width: 700px;
+    padding-top: 0px;
+    margin: 20px;
+}
+.tensp .icon123{
+    position: absolute !important;
+    max-width: 100%;
+    right: 480px;
+    top:230px;
+    cursor: pointer;
+}
+.tensp .icon1234{
+    position: absolute !important;
+    max-width: 100%;
+    right: 480px;
+    top:460px;
+    cursor: pointer;
+}
+.control1{
+    width: 30%;
+    border-radius: 0px 0px 0px 4px gray;
+    position:relative;
+    box-sizing: border-box;
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: 4px;
+    outline:none;
+    height: 30px;
+}
+.buybox2{
+    margin-top: 5px;
+    border: 1px solid #d1cdcd;
+    width: 1500px;
+    margin-left: 30px;
+    height: 300px;
+}
+.buybox2 .inf{
+    font-size: 25px;
+}
+.buybox2 p{
+    border-bottom: 0.5px solid gray;
+    margin: 20px;
+}
+.buybox2 .link1{
+    margin-left: 20px;
+    text-decoration: none;
+    color:#999;
+    padding: 16px 140px;
+    background-color: rgb(58, 59, 59);
+}
+.buybox2 .link1:hover{
+    background-color: black;
+    color: white;
+}
+.buybox2 .link{
+    padding-top: 30px;
+}
+.buybox2 .link a{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 130px;
+    color: darkgray;
+}
+.buybox2 .link a:hover{
+    color: black;
+}
+.note{
+    display: flex;
+}
+.note .control2{
+    width: 100%;
+    background-color: rgb(236, 235, 235);
+}
+.note3{
+    margin-left: 20px;
+}
+.note2{
+    color: rgb(66, 65, 65);
+    font-size: 20px;
+}
 .hotline{
     height: 70px;
     background: whitesmoke;
@@ -184,16 +269,16 @@ footer .ended{
 footer .ended .footer-icon{
     margin-right: 30px;
 }
-.aboutus{
+footer .ended .footer-icon.aboutus{
     width:40%;
 }
-.aboutus h3{
+footer .ended .footer-icon.aboutus h3{
     position: relative;
     color:black;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.aboutus p{
+footer .ended .footer-icon.aboutus p{
     color: #999;
 }
 .lienket h3{
@@ -247,4 +332,7 @@ footer .ended .footer-icon{
     line-height: 70px;
     color: black;
     text-align: center;
+}
+.ket{
+    color:black;
 }

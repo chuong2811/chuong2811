@@ -44,7 +44,6 @@ picture {
 }
 html{
     font-family: 'Gentium Basic', serif;
-    scroll-behavior: smooth;
 }
 header{
     position: fixed;
@@ -53,14 +52,14 @@ header{
     left: 0px;
     z-index: 5;
 }
-.logo{
+.ten{
     font-variant: small-caps;
     text-align: center;
     padding: 5px;
     margin: 0px;
     background: white;
 }
-.logo h1{
+.ten h1{
     padding:0px;
     width: 210px;
     height: 50px;
@@ -68,18 +67,18 @@ header{
     margin: 0px auto;
     border: 1px solid white;
 }
-.logo img{
+.ten img{
     position: absolute;
     top: 0px;
     left: 10px;
 }
-.logo .phukien{
+.ten .phukien{
     position: absolute !important ;
     max-width: 100%;
     top: 10px;
     right:20px;
 }
-.logo .phukien .control{
+.ten .phukien .control{
     /* display: none; */
     position:relative;
     top: -15px;
@@ -97,25 +96,31 @@ header{
     background: black;
     padding: 0.5px; 
 }
-.menu .nav li{
-    position: relative;
-    list-style:none;
-}
 .menu .nav>li{
     display: inline-block;
     margin-right: 30px;
 }  
-.menu .nav li a{
+.menu .nav>li>a{
     color: white;
     text-decoration: none;
+}
+.sub-menu{
+    text-align: left;
+    color: black;
+}
+.menu .nav .sub-menu>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu .nav li{
+    position: relative;
+    list-style:none;
 }
 .menu .nav li a{
     padding: 10px;
     line-height: 20px;
     display: inline-block;
-}
-.menu .nav>li>a:hover{
-    color: #999;
 }
 .menu .nav .sub-menu{
     display: none;
@@ -127,12 +132,6 @@ header{
     padding: 0px; 
     top: 40px;
     left: 0;
-    text-align: left;
-    color: black;
-}
-.menu .nav .sub-menu>li>a{
-    text-decoration: none;
-    color: black;
 }
 .menu .nav .sub-menu>li:hover{
     background-color:  gray;
@@ -140,24 +139,49 @@ header{
 .menu .nav li:hover>.sub-menu{
     display: block;
 }
-
-.thongtin{
-    padding: 134px;
-    font-family: 'Be Vietnam Pro', sans-serif; 
+.menu .nav>li>a:hover{
+    color: #999;
 }
-.thongtin h1{
-    color: gray;
+.batdau{
+    padding-top: 150px;
     text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-.thongtin .dacbiet{
-    text-align: center;
-    padding: 30px;
+.form{
+   padding-top: 0px;
+   font-family: 'Be Vietnam Pro', sans-serif; 
+   text-align: center;
 }
-.thongtin .hanmuc{
-    font-size: 20px;
-    color: gray;
+.gioitinh {
+    padding-right: 220px;
 }
-
+.control2{
+    width: 25%;
+    top: -15px;
+    right:0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 1px solid #b9b9b9;
+    background-color: rgb(223, 222, 222);
+    border-radius: 4px;
+    outline:none;
+    padding: 10px 12px;
+}
+.control2:focus{
+    background-color: white;
+}
+.control1{
+    width: 20%;
+    background-color: black;
+    color: #f8f8f8;
+    padding: 10px 12px;
+    box-shadow: 0 0 0 0;
+}
+.control1:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 0 0;
+}
 .hotline{
     height: 70px;
     background: whitesmoke;
